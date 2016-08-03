@@ -3,9 +3,7 @@ import React from 'react';
 import CustomerListItem from './customer-list-item'
 
 function mapCustomers(data) {
-    return data.customers.map(customer => {
-        return <CustomerListItem data={customer} key={customer.customer_id}/>
-    })
+    return data.customers.map(customer => <CustomerListItem data={customer} key={customer.customer_id}/>)
 }
 export default function(props){
     return(

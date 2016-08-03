@@ -1,9 +1,5 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
-
-function navigateTo(id) {
-    browserHistory.push('/Orders/' + id);
-}
+import { Link } from 'react-router';
 
 function renderRows(data) {
     return data.map(row => {
@@ -13,7 +9,7 @@ function renderRows(data) {
                 <td>{row.quantity}</td>
                 <td>{row.date}</td>
                 <td>
-                    <span className='btn btn-secondary btn-sm m-r-1' onClick={() => navigateTo(row.order_id)}><i className="fa fa-eye"></i></span>
+                    <Link to={'Orders' + row.order_id}><span className='btn btn-secondary btn-sm m-r-1'><i className="fa fa-eye"></i></span></Link>
                 </td>
             </tr>
         )

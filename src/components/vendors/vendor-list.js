@@ -3,9 +3,7 @@ import React from 'react';
 import VendorListItem from './vendor-list-item'
 
 function mapVendors(data) {
-    return data.vendors.map(vendor => {
-        return <VendorListItem data={vendor} key={vendor.vendor_id}/>
-    })
+    return data.vendors.map(vendor =>  <VendorListItem data={vendor} key={vendor.vendor_id}/>)
 }
 export default function(props){
     return(

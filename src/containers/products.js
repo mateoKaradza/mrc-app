@@ -7,7 +7,6 @@ import { filterProducts, changeColor, changeStatus } from '../actions/products';
 
 import Search from '../components/other/search';
 import ProductList from '../components/products/product-list';
-import ProductModal from '../components/products/product-modal';
 
 class Products extends Component {
     constructor(props) {
@@ -19,7 +18,6 @@ class Products extends Component {
         return(
             <div>
                 <div><h2>Products</h2></div>
-                <ProductModal data={{}} type='ADD'/>
                 <div className="row m-y-1">
                     <div className="col-md-7">
                         <Search action={this.props.filterProducts}/>

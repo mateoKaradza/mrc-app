@@ -1,4 +1,4 @@
-import { CUSTOMERS_FILTER_SUCCESS, CUSTOMERS_FILTER_START } from '../actions/customers';
+import { CUSTOMERS_FILTER_SUCCESS } from '../actions/customers';
 import _ from 'lodash';
 
 let initialState = {customers: null, err: null, new: false}
@@ -9,9 +9,6 @@ export default function (state = initialState, action) {
         case CUSTOMERS_FILTER_SUCCESS:
             obj = _.cloneDeep(state);
             obj.customers = action.customers;
-            return obj;
-        case CUSTOMERS_FILTER_START:
-            obj = _.cloneDeep(state);
             return obj;
         case 'UPDATE_CUSTOMER_ERROR':
             obj = _.cloneDeep(state);

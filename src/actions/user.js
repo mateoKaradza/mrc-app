@@ -58,9 +58,7 @@ export function verify() {
                     dispatch(verifySuccess(json));
                 } else
                     dispatch(verifyError(json.err));
-            }
-                
-            )
+            })
     }
 }
 

@@ -89,9 +89,9 @@ class CustomerEdit extends Component {
                     <Input label="ZIP" value={this.state.zip} stateKey="zip" updateState={this.updateState}/>
                     <Input label="Country" value={this.state.country} stateKey="country" updateState={this.updateState}/>
                     <Input label="Notes" textarea value={this.state.notes} stateKey="notes" updateState={this.updateState}/>
-                <div className="pull-xs-right form-group p-t-1">
-                    <button type="submit" className="btn btn-primary" onSubmit={this.handleSubmit}>{text.submit}</button>
-                </div>
+                    <div className="pull-xs-right form-group p-t-1">
+                        <button type="submit" className="btn btn-primary" onSubmit={this.handleSubmit}>{text.submit}</button>
+                    </div>
                 </form>
              </div>     
         )

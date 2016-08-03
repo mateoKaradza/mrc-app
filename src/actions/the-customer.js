@@ -98,7 +98,6 @@ export function updateCustomer(customer) {
                     
                 )
         } else {
-            // add
             return fetch('http://localhost:1337/api/customers/new', {
                 method: 'POST',
                 headers: {
@@ -125,7 +124,7 @@ export function updateCustomer(customer) {
 
 function newCustomer(id) {
     browserHistory.push('/Customers/' + id);
-    return {type: ''};
+    return {type: 'NEW_CUSTOMER_SUCCESS'};
 }
 
 export function deleteCustomer(customer_id) {
@@ -143,7 +142,5 @@ export function deleteCustomer(customer_id) {
                 browserHistory.replace('/Customers/');
                 dispatch({type: 'CUSTOMER_DELETE_SUCCESS'});
                 dispatch(filterCustomers(''))
-            }
-                
-            )
+            })
 }

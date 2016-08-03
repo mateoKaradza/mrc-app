@@ -94,7 +94,6 @@ export function updateVendor(vendor) {
                     }                   
                 })
         } else {
-            // add
             return fetch('http://localhost:1337/api/vendors/new', {
                 method: 'POST',
                 headers: {

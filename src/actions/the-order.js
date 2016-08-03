@@ -1,12 +1,5 @@
 export const ORDER_FETCH_SUCCESS = 'ORDER_FETCH_SUCCESS';
-export const ORDER_FETCH_START= 'ORDER_FETCH_START';
-
 export const ORDER_ITEMS_FETCH_SUCCESS = 'ORDER_ITEMS_FETCH_SUCCESS';
-export const ORDER_ITEMS_FETCH_START = 'ORDER_ITEMS_FETCH_SUCCESS';
-
-export const ORDER_ITEM_EDIT_START = 'ORDER_ITEM_EDIT_START';
-export const ORDER_ITEM_EDIT_END = 'ORDER_ITEM_EDIT_END';
-
 export const ORDER_ITEM_FETCH_SUCCESS = 'ORDER_ITEM_FETCH_SUCCESS';
 
 import { browserHistory } from 'react-router';
@@ -91,7 +84,7 @@ export function updateOrder(order) {
 
 function newOrder(id) {
     browserHistory.replace('/Orders/' + id);
-    return {type: ''};
+    return {type: 'NEW_ORDER_SUCCESS'};
 }
 
 export function updateOrderItem(item) {

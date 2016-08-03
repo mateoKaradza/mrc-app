@@ -1,7 +1,7 @@
 import { VENDORS_FILTER_SUCCESS } from '../actions/vendors';
 import _ from 'lodash';
 
-let initialState = {vendors: null, err: null, new: false}
+let initialState = {vendors: null}
 
 export default function (state = initialState, action) {
     let obj = {};
