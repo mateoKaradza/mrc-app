@@ -9,7 +9,7 @@ function renderRows(data) {
                 <td>{row.quantity}</td>
                 <td>{row.date}</td>
                 <td>
-                    <Link to={'Orders' + row.order_id}><span className='btn btn-secondary btn-sm m-r-1'><i className="fa fa-eye"></i></span></Link>
+                    <Link to={'Orders/' + row.order_id}><span className='btn btn-secondary btn-sm m-r-1'><i className="fa fa-eye"></i></span></Link>
                 </td>
             </tr>
         )
